@@ -1,0 +1,9 @@
+{
+  "commands.currencies.result": "您的账户中有如下余额：\n硬币：%s\n以太：%s",
+
+  "item.property.not_droppable": "不可丢弃",
+
+  "item.star_kernel": "星石",
+  "item.star_kernel.description": "四角星状的物品，材质未知。似乎与这个世界有着千丝万缕的联系。",
+  "item.star_kernel.usage": "手持此物品并点按鼠标右键以开启 RealmEther 游戏菜单。"
+}
