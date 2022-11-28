@@ -6,10 +6,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Clone repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           fetch-depth: 0
       - name: Run PackSquash
-        uses: ComunidadAylas/PackSquash-action@v2
+        uses: ComunidadAylas/PackSquash-action@v3
+      - name: Download optimized pack
+        uses: actions/download-artifact@v3
         with:
-          path: .
+          name: Optimized pack
+      - name: Tag and create release
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: action-v${{ github.run_number }}
+          files: pack.zip
