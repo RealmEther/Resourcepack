@@ -1,0 +1,7 @@
+{
+  "commands.currencies.result": "Currencies in your account:\nCoins：%s\nEther：%s",
+
+  "item.property.not_droppable": "Not Droppable",
+
+  "item.star_kernel": "Star Kernel"
+}
