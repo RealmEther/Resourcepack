@@ -1,4 +1,4 @@
 git add .
-git commit -m "Add everything"
+git commit -m "Update"
 
 git push -u origin main --force
