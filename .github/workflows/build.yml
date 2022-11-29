@@ -11,6 +11,10 @@ jobs:
           fetch-depth: 0
       - name: Run PackSquash
         uses: ComunidadAylas/PackSquash-action@v3
+        with:
+          zip_spec_conformance_level: disregard
+          size_increasing_zip_obfuscation: true
+          percentage_of_zip_structures_tuned_for_obfuscation_discretion: 100
       - name: Download optimized pack
         uses: actions/download-artifact@v3
         with:
